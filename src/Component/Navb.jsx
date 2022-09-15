@@ -58,7 +58,11 @@ const Navb = () => {
                   <a href="mailto: aamil.shafi13@gmail.com">
                     <li className='fs-5 navbl text-light pe-1'style={{background: '#31087B'}}>E-mail <AiOutlineMail className='' size={25}/></li>
                   </a>
+
+                  <a href="https://drive.google.com/file/d/1m44VZ4yn8C0FGXuxk7Nqx3VVIulBzMrl/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+
                     <li className='fs-5  navbl text-light pe-1'style={{background: '#2B7A0B'}}>Resume <BsPersonLinesFill className='ps-1' size={25}/></li>
+                  </a>
                 </ul>
             </div>
           </Container>
