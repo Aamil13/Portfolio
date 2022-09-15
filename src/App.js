@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+
 import Home from './Component/Home';
 import Navb from './Component/Navb';
 import Skills from './Component/Skills';
