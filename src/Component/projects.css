@@ -1,0 +1,61 @@
+.bgi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 400px !important;
+    
+    position: relative;
+}
+
+
+    .mm{
+        padding-left: 150px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .mm{
+            padding-left: 100px;
+        }
+        
+    }
+    @media screen and (max-width: 910px) {
+        .mm{
+            padding-left: 240px;
+        }
+        
+    }
+    @media screen and (max-width: 610px) {
+        .mm{
+            padding-left: 100px;
+        }
+        
+    }
+    @media screen and (max-width: 510px) {
+        .mm{
+            padding-left: 50px;
+        }
+        
+    }
+    @media screen and (max-width: 450px) {
+        .mm{
+            padding-left: 20px;
+        }
+        
+    }
+
+
+
+.bgi2:hover{
+    position: absolute;
+    background-color: black;
+    /* width: 100%;
+    height: 100%; */
+    left: 0;
+    opacity: .8;
+}
+
+.bgi2{
+    opacity: 0;
+}
+
