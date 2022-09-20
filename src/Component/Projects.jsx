@@ -4,6 +4,7 @@ import netflix from "../Assets/netflix.png"
 import chat from "../Assets/chat.png"
 import anotes from "../Assets/anotes.png"
 import landing from "../Assets/landing.png"
+import searcher from "../Assets/searcher.png"
 
 import "./projects.css"
 
@@ -35,7 +36,7 @@ const Projects = () => {
                             
                     <Button className='btt'>GitHub</Button>
                         </a>
-                        <a href="https://superlative-gelato-4ee981.netlify.app" target="_blank" rel="noreferrer noopener" >
+                        <a href="https://netflixclone13.netlify.app/" target="_blank" rel="noreferrer noopener" >
                     <Button>Demo</Button>
                     </a>
                     </div>
@@ -116,7 +117,29 @@ const Projects = () => {
 
 
 
+                    {/* ................................................................................ */}
 
+
+                    <div class="col bgi col-12 col-md-4  "  style={{backgroundImage:`url(${searcher})`}}>
+                <div className='bgi2 h-100 w-100 text-light'>
+                    <h4 className='pt-3 text-danger'>
+                        Searcher
+                    </h4>
+                    <p>
+                       Google clone with rapid-api google-api     
+                        
+                    </p>
+                    <div className=' d-flex justify-content-evenly'>
+                    <a href="https://github.com/Aamil13/Searcher" target="_blank" rel="noreferrer noopener">
+                            
+                    <Button className='btt'>GitHub</Button>
+                        </a>
+                        <a href="https://fanciful-cuchufli-01165c.netlify.app/video" target="_blank" rel="noreferrer noopener" >
+                    <Button>Demo</Button>
+                    </a>
+                    </div>
+                </div>
+            </div>
 
 
 
