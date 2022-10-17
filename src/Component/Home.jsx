@@ -1,28 +1,33 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import { Canvas} from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 
-import { Link } from 'react-router-dom';
+
+import DText from './3DText';
 
 const Home = () => {
-  return (
-    <>
-      <div
-        className="w-100"
-        style={{ height: "87vh", backgroundColor: "#354f52" }}>
-        
-        <div className='text-sm-center d-flex flex-column justify-content-center  h-100 w-100 ps-5'>
-            <h6 className=' m-0 '>Hi, My name is</h6>
-            <h3 className='text-danger m-0 h2'>Mohd Aamil Shafi</h3>
-            <h3 className='text-light m-0'>I'm a React Js Developer</h3>
-            <h6 className='text-light m-0 mt-1 mb-4 '>Currentlly focused on gaining industry experience.</h6>
-            <div className='d-flex justify-content-center'>
-              <Link to="/projects">
 
-                <button className='btn-dark text-light'>View Work</button>
-              </Link>
-            </div>
-        </div>
-           
-      </div>
+  
+  return (
+    
+    <>
+    <div className="w-100 mobilewidth"
+     style={{ height: "87vh", backgroundColor: "black"}} >
+          
+    <Canvas orthographic camera={{ position: [0, 0, 100], zoom: 100 }}>
+    
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[10, 10, 10]} />
+      <Suspense fallback={null}>
+      <DText  />
+      </Suspense>
+      {/* <axesHelper scale={2} position={[0, 0, 0]} onUpdate={(self) => self.setColors('#ff2080', '#20ff80', '#2080ff')} /> */}
+      <OrbitControls  enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />
+      
+    </Canvas>
+    
+    </div>
+     
     </>
   );
 }

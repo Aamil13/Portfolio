@@ -8,6 +8,7 @@ import "./style.css"
 import {AiFillGithub,AiOutlineMail} from "react-icons/ai"
 import {BsPersonLinesFill} from "react-icons/bs"
 import {Link} from "react-router-dom"
+import { GlitchText } from 'glitch-text';
 
 
 
@@ -18,7 +19,7 @@ const Navb = () => {
     <>
     
   
-        <Navbar  key={expand} style={{backgroundColor:"#2f3e46"}} expand={expand} className=" navbar-dark">
+        <Navbar  key={expand} style={{backgroundColor:"black"}} expand={expand} className=" navbar-dark">
           <Container fluid>
             <Navbar.Brand >
                 <Link to="/">
@@ -33,6 +34,7 @@ const Navb = () => {
             >
               <Offcanvas.Header closeButton >
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  
                 <img src={logo} alt="logo" style={{width:"200px"}} />
                 </Offcanvas.Title>
               </Offcanvas.Header>

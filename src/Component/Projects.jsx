@@ -5,152 +5,86 @@ import chat from "../Assets/chat.png"
 import anotes from "../Assets/anotes.png"
 import landing from "../Assets/landing.png"
 import searcher from "../Assets/searcher.png"
+import pl from "../Assets/pl.png"
+import Dashbaord from "../Assets/Dashboard.png"
+
 
 import "./projects.css"
 
 const Projects = () => {
+
+    const data = [
+        {img:Dashbaord,
+        title: "Dashboard",
+        description: "A Beautifull and Responsive Dashboard with Chart from ApexCharts and Animation using Framer-Motion and Lastly Table by MUI.",
+        link: "https://dapper-chimera-d38628.netlify.app/",
+        git:"https://github.com/Aamil13/GlassDashboard"},
+        {img:pl,
+            title: "Product Listing And Cart",
+            description: "A fully functional Product Listing and Cart Page with sorting,filtering and searching functions.",
+            link: "https://shopihy.netlify.app/",
+            git:"https://github.com/Aamil13/Shopihy"},
+        {img:landing,
+            title: "Landing-Page",
+            description: "Responsive Landing page",
+            link:"https://beautiful-banoffee-b09631.netlify.app/",
+        git:"https://github.com/Aamil13/1landingpage"},
+
+        {img:netflix,
+            title: "Netflix-Clone",
+            description: "Clone of Netflix with sign-up and Log-In functionality using Firebase Auth Have used TMDB api to fetch and populate the genres. And lastlly have used Firebase cloud storage to save user Fav movies in Account page. TO add the topping it's Fully responsive.",
+            link: "https://netflixclone13.netlify.app/",
+            git: "https://github.com/Aamil13/netflixclonef/tree/master"
+        },
+        {img:anotes,
+            title: "Advance Notes App",
+            description: "Advanced Notes app with sorting , searching, priority function.",
+            link:"https://subtle-rolypoly-d92d8b.netlify.app/",
+            git: "https://github.com/Aamil13/Anotes"},
+        {img:searcher,
+             title: "Google Search clone",
+             description: "Responsive Landing page",
+            link:"https://fanciful-cuchufli-01165c.netlify.app/video",
+            git:"https://github.com/Aamil13/Searcher" },
+             {img:chat,
+                title: "Chat App",
+                description:"Chat app where anyone can join and chat. Have used Google Auth and Firebase for Auth and Backend." ,
+                link: "https://dynamic-cuchufli-c32f60.netlify.app/" ,
+                git: "https://github.com/Aamil13/chat1"
+            },
+    ]
   return (
     <>
-      <div className="w-100 h-100 bg-dark">
-        <div className="text-center">
-          <h3 className="pt-5">Projects</h3>
-          <p>Some of the project i've made.</p>
-        </div>
 
-        <div class=" text-center  mm  bg-dark" >
-          <div class="row gap-4 gap-xxl-4"  >
-            <div class="col col-12 col-md-4  bgi "  style={{backgroundImage:`url(${netflix})`}}>
-                <div className='bgi2 h-100 w-100 text-light'>
-                    <h4 className='pt-3 text-danger'>
-                        Netflix Clone
-                    </h4>
-                    <p>Clone of Netflix with sign-up and Log-In functionality using <span className='text-warning'>Firebase Auth </span>
-                         Have used TMDB api to fetch and populate the genres.
-                        And lastlly have used <span className='text-warning'>Firebase cloud storage</span> to save user Fav movies in Account page.
-                            TO add the topping it's Fully responsive.
-                            
-                        
-                    </p>
-                    <div className=' d-flex justify-content-evenly'>
-                        <a href="https://github.com/Aamil13/netflixclonef/tree/master" target="_blank" rel="noreferrer noopener">
-                            
-                    <Button className='btt'>GitHub</Button>
-                        </a>
-                        <a href="https://netflixclone13.netlify.app/" target="_blank" rel="noreferrer noopener" >
-                    <Button>Demo</Button>
+<ul class="cards">
+    {data.map((item,idx)=>(
+        <li key={idx}>
+        <div class="card">
+          <img src={item.img} class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+                              
+             
+              <div class="card__header-text">
+                <h3 class="card__title">{item.title}</h3>            
+                <span class="card__status"> <a href={item.link} target="_blank" rel="noreferrer noopener" >
+                    <Button className='btn-success'>Demo</Button>
                     </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            
-            
-            <div class="col bgi col-12 col-md-4 "  style={{backgroundImage:`url(${chat})`}}>
-                <div className='bgi2 h-100 w-100 text-light'>
-                    <h4 className='pt-3 text-danger'>
-                        Chat app
-                    </h4>
-                    <p>Chat app where anyone can join and chat. Have used Google Auth and Firebase for Auth and Backend.
+                    <a href={item.git} target="_blank" rel="noreferrer noopener">
                             
-                        
-                    </p>
-                    <div className=' d-flex justify-content-evenly'>
-                    <a href="https://github.com/Aamil13/chat1" target="_blank" rel="noreferrer noopener">
-                            
-                    <Button className='btt'>GitHub</Button>
-                        </a>
-                        <a href="https://dynamic-cuchufli-c32f60.netlify.app/" target="_blank" rel="noreferrer noopener" >
-                    <Button>Demo</Button>
-                    </a>
-                    </div>
-                </div>
+                            <Button className='btn-dark me-3'>GitHub</Button>
+                                </a></span>
+              </div>
             </div>
-            
-
-
-
-          
-            
-            <div class="col bgi col-12 col-md-4  "  style={{backgroundImage:`url(${anotes})`}}>
-                <div className='bgi2 h-100 w-100 text-light'>
-                    <h4 className='pt-3 text-danger'>
-                        Advanced Notes app
-                    </h4>
-                    <p>Advanced Notes app with sorting , searching, priority function.
-                            
-                        
-                    </p>
-                    <div className=' d-flex justify-content-evenly'>
-                    <a href="https://github.com/Aamil13/Anotes" target="_blank" rel="noreferrer noopener">
-                            
-                    <Button className='btt'>GitHub</Button>
-                        </a>
-                        <a href="https://subtle-rolypoly-d92d8b.netlify.app/" target="_blank" rel="noreferrer noopener" >
-                    <Button>Demo</Button>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col bgi col-12 col-md-4  "  style={{backgroundImage:`url(${landing})`}}>
-                <div className='bgi2 h-100 w-100 text-light'>
-                    <h4 className='pt-3 text-danger'>
-                        Landing Page
-                    </h4>
-                    <p>
-                       Responsive Landing Page.     
-                        
-                    </p>
-                    <div className=' d-flex justify-content-evenly'>
-                    <a href="https://github.com/Aamil13/1landingpage" target="_blank" rel="noreferrer noopener">
-                            
-                    <Button className='btt'>GitHub</Button>
-                        </a>
-                        <a href="https://beautiful-banoffee-b09631.netlify.app/" target="_blank" rel="noreferrer noopener" >
-                    <Button>Demo</Button>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-                    {/* ................................................................................ */}
-
-
-                    <div class="col bgi col-12 col-md-4  "  style={{backgroundImage:`url(${searcher})`}}>
-                <div className='bgi2 h-100 w-100 text-light'>
-                    <h4 className='pt-3 text-danger'>
-                        Searcher
-                    </h4>
-                    <p>
-                       Google clone with rapid-api google-api     
-                        
-                    </p>
-                    <div className=' d-flex justify-content-evenly'>
-                    <a href="https://github.com/Aamil13/Searcher" target="_blank" rel="noreferrer noopener">
-                            
-                    <Button className='btt'>GitHub</Button>
-                        </a>
-                        <a href="https://fanciful-cuchufli-01165c.netlify.app/video" target="_blank" rel="noreferrer noopener" >
-                    <Button>Demo</Button>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            </div>
-            </div>
-            </div>
-          
-       
-    
+            <p class="card__description">{item.description}</p>
+          </div>
+        </div>      
+      </li>
+    ))}
+  
+ 
+  
+</ul>           
     </>
   );
 }
