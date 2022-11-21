@@ -1,4 +1,130 @@
+.Project-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Container{
+  margin-top: 40px;
+  width: 70%;
+  height: 300px;
+  background-color: whitesmoke;
+  display: flex;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+ 
+}
 
+.left-side{
+  width: 40%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.left-side>img{
+  object-fit: contain;
+  width: 100%;
+  height: 80%;
+}
+
+.btt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.btt>button{
+  width: 30%;
+  
+}
+
+.right-side{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.stholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.stack>img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.pp{
+  min-height: 100px;
+}
+
+
+@media screen and (max-width:500px) {
+  .Container{
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side{
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 
  :root {
@@ -115,4 +241,4 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }    
+  }     */

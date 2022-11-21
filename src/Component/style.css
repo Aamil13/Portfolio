@@ -1,4 +1,7 @@
-
+.nfluid{
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
 
 
 .navblc{
@@ -9,6 +12,39 @@
     
 }
 
+.git{
+  height: 40px !important;
+  backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+
+}
+.mail{
+  height: 40px !important;
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(8, 5, 117, 0.45);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.resume{
+  height: 40px !important;
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(65, 117, 5, 0.45);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.sidea{
+  text-decoration: none;
+  text-shadow: 0px 0px 5px black;
+}
+
 .navbul{
     list-style: none;
     width: 150px;
@@ -17,7 +53,7 @@
     justify-content: space-between;
     
     
-    height: 150px;
+    height: 100px;
 }
 
 .navbl{
@@ -36,20 +72,42 @@
 }
 
 li:hover{
-    margin-left: -35px;
+    margin-left: -38px;
 }
 
-.aa {
-    color: #FFF;
+  .aa {
+     color: #FFF;
     text-decoration: none;
-    transition: 1s;
+    /* transition: 1s;  */
+    display: inline-block;
+  position: relative;
+  
+  } 
+
+  .aa::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: crimson;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    color: #FFF;
   }
+  
+ .aa:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #FFF;
+ }
 
   .aa:hover{
-    color: #84a98c;
-   text-decoration: underline;
-   text-decoration-color: red;
-  }
+    color: white !important;
+   
+  }  
 
 
 

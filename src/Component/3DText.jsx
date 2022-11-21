@@ -56,7 +56,7 @@ const DText = ({ margin = 0.5 }) => {
           letterSpacing={-0.06}
           size={size}
           font="/Inter_Bold.json">
-          {`Mohd Aamil Shafi\n I'm a React Js Developer`}
+          {`Mohd Aamil Shafi\n I'm a Full Stack Developer`}
           <meshNormalMaterial />
         </Text3D>
         </Center>
