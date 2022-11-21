@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { GlitchText } from 'glitch-text';
 import "./About.css"
 
